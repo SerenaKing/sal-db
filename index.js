@@ -22,6 +22,15 @@ client.categories = fs.readdirSync("./commands/");
 });
 
 client.on("ready", () => {
+
+    client.user.setPresence({
+		status: "idle",
+		activity: { 
+			name: "[SAL] Database",
+			type: "WATCHING"
+		}
+	})
+
     setTimeout(async function () {
         console.log(chalk.white(`[${chalk.green(`INFO`)}${chalk.white(`] - Connecting...`)}`));
     }, ms('1s'));
