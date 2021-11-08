@@ -23,6 +23,11 @@ client.categories = fs.readdirSync("./commands/");
 
 client.on("ready", () => {
 
+    // fs.writeFile('db.txt', JSON.stringify(quickdb.all()), function(e) {
+    //     if(e) console.log(e)
+    //     console.log('Success!')
+    // })
+
     client.user.setPresence({
 		status: "idle",
 		activity: { 
